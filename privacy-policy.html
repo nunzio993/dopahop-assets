@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DopaHop</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    line-height: 1.55;
+    color: #222;
+    background: #fff;
+  }
+  h1 { color: #FFB703; margin-bottom: 8px; font-size: 28px; }
+  h2 { color: #023047; margin-top: 32px; font-size: 20px; }
+  h3 { color: #444; margin-top: 20px; font-size: 16px; }
+  p, li { font-size: 15px; }
+  a { color: #FB8500; }
+  .meta { color: #777; font-size: 13px; margin-bottom: 28px; }
+  .lang-switch { float: right; font-size: 13px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background: #f6f6f6; }
+  .disclaimer {
+    background: #FFF8E6;
+    border-left: 4px solid #FFB703;
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch"><a href="#en">English</a></div>
+<h1>Privacy Policy — DopaHop</h1>
+<div class="meta">Versione 1.0 — Aggiornato il 26 aprile 2026</div>
+
+<h2>1. Chi siamo</h2>
+<p>
+  DopaHop è un'applicazione mobile sviluppata in Italia da un developer
+  individuale ("noi") per supportare persone con ADHD nella gestione
+  della casa, delle routine, dell'umore e del focus.
+</p>
+<p>
+  <strong>Contatto:</strong> <a href="mailto:annunziatoco@gmail.com">annunziatoco@gmail.com</a><br>
+  <strong>Tipo di trattamento dati:</strong> on-device, locale al telefono.
+</p>
+
+<h2>2. Quali dati raccogliamo</h2>
+<p>
+  DopaHop salva i seguenti dati <strong>esclusivamente sul tuo telefono</strong>.
+  Nessun server esterno riceve questi contenuti.
+</p>
+<ul>
+  <li>Task casa, stanze, completamenti</li>
+  <li>Pensieri salvati nel Brain Dump (testo)</li>
+  <li>Lista della spesa</li>
+  <li>Mood e energia (check-in giornalieri)</li>
+  <li>Routine personali e step</li>
+  <li>Promemoria farmaci (nome, dosaggio, orari)</li>
+  <li>Tracker time-since e timer focus</li>
+  <li>Sessioni di respirazione e di Focus Sounds</li>
+  <li>Badge e progressi</li>
+  <li>Preferenze (tema, lingua, orari notifiche)</li>
+</ul>
+
+<h3>Dati raccolti da terze parti</h3>
+<table>
+  <tr><th>Servizio</th><th>Dato</th><th>Scopo</th></tr>
+  <tr><td>Google AdMob</td><td>Advertising ID Android</td><td>Mostrare annunci nella versione gratuita</td></tr>
+  <tr><td>Google AdMob</td><td>IP address (mascherato)</td><td>Geolocalizzazione approssimativa per ad</td></tr>
+</table>
+<p>
+  Per gli utenti dell'Unione Europea/UK/Svizzera, prima di mostrare
+  annunci personalizzati richiediamo <strong>consenso esplicito</strong>
+  tramite il dialogo Google UMP. Se rifiuti il consenso vedrai solo
+  annunci generici (non basati sui tuoi interessi).
+</p>
+
+<h2>3. Come usiamo i dati</h2>
+<ul>
+  <li><strong>Funzionamento dell'app</strong>: i dati locali servono solo a far funzionare le feature che usi.</li>
+  <li><strong>Pubblicità</strong>: AdMob (Google) gestisce gli annunci nella versione gratuita.</li>
+  <li><strong>Nessuna analisi del comportamento</strong>: non usiamo Firebase Analytics, Mixpanel, o sistemi di profilazione.</li>
+  <li><strong>Nessuna vendita di dati a terzi</strong>.</li>
+</ul>
+
+<h2>4. Dove sono conservati</h2>
+<p>
+  Tutti i dati personali sono salvati <strong>solo sul tuo dispositivo</strong>:
+</p>
+<ul>
+  <li>Database SQLite locale (<code>dopahop.db</code>)</li>
+  <li>Preferenze (AsyncStorage)</li>
+  <li>File audio focus sounds in cache locale</li>
+</ul>
+<p>
+  Android cripta automaticamente lo storage del dispositivo (AES-256 da
+  Android 6 in poi). I tuoi dati sono protetti dalla cifratura del
+  sistema operativo.
+</p>
+
+<h2>5. Permessi richiesti</h2>
+<table>
+  <tr><th>Permesso</th><th>Motivo</th></tr>
+  <tr><td>POST_NOTIFICATIONS</td><td>Promemoria routine, farmaci</td></tr>
+  <tr><td>USE_EXACT_ALARM</td><td>Notifiche all'orario esatto</td></tr>
+  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>Ri-schedulare promemoria dopo riavvio</td></tr>
+  <tr><td>USE_BIOMETRIC</td><td>Sblocco biometrico opt-in (solo se attivato)</td></tr>
+  <tr><td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Audio Focus Sounds in background</td></tr>
+  <tr><td>RECORD_AUDIO</td><td>Voice note nel Brain Dump (solo se attivato)</td></tr>
+  <tr><td>ACCESS_NETWORK_STATE</td><td>Annunci AdMob</td></tr>
+</table>
+<p>
+  <strong>Non chiediamo mai:</strong> localizzazione, contatti, foto,
+  galleria, microfono in background, calendario.
+</p>
+
+<h2>6. I tuoi diritti (GDPR)</h2>
+<p>In ogni momento puoi:</p>
+<ul>
+  <li><strong>Esportare</strong> i tuoi dati in formato JSON: <em>Impostazioni → Dati → Esporta</em></li>
+  <li><strong>Cancellare</strong> tutti i dati con un tap: <em>Impostazioni → Zona rischio → Cancella tutti i miei dati</em></li>
+  <li><strong>Modificare</strong> le preferenze annunci: <em>Impostazioni → Gestisci preferenze annunci</em></li>
+  <li><strong>Disinstallare</strong> l'app: rimuove automaticamente tutti i dati locali</li>
+</ul>
+<p>
+  Per richieste GDPR specifiche (accesso, portabilità, opposizione)
+  scrivi a <a href="mailto:annunziatoco@gmail.com">annunziatoco@gmail.com</a>.
+  Risponderemo entro 30 giorni.
+</p>
+
+<h2>7. Disclaimer medico</h2>
+<div class="disclaimer">
+  <strong>⚠️ Importante</strong><br><br>
+  DopaHop è una app di benessere, <strong>non un dispositivo medico</strong>.
+  I moduli "Farmaci", "Mood", "Respirazione" e "Focus Sounds" sono
+  strumenti di supporto e <strong>non sostituiscono</strong> il consiglio
+  di un medico, psicologo o farmacista qualificato.
+  <br><br>
+  In caso di emergenza sanitaria chiama il <strong>112</strong> (UE)
+  o il numero di emergenza locale del tuo paese.
+</div>
+
+<h2>8. Minori</h2>
+<p>
+  DopaHop non è destinato a minori di 13 anni (COPPA US) né a minori
+  di 16 anni senza consenso parentale (GDPR-K UE). Non raccogliamo
+  consapevolmente dati da minori. Se sei genitore e ritieni che tuo
+  figlio abbia usato l'app senza autorizzazione, contattaci per
+  cancellare i dati.
+</p>
+
+<h2>9. Aggiornamenti policy</h2>
+<p>
+  Se cambiamo significativamente questa policy, notificheremo gli utenti
+  all'apertura dell'app. La data di "Ultimo aggiornamento" in cima a
+  questa pagina viene aggiornata ad ogni revisione.
+</p>
+
+<hr>
+
+<a id="en"></a>
+<h1>Privacy Policy — DopaHop (English)</h1>
+<div class="meta">Version 1.0 — Updated April 26, 2026</div>
+
+<h2>1. Who we are</h2>
+<p>
+  DopaHop is a mobile app developed in Italy by an individual developer
+  to help people with ADHD manage their home, routines, mood and focus.
+</p>
+<p>
+  <strong>Contact:</strong> <a href="mailto:annunziatoco@gmail.com">annunziatoco@gmail.com</a><br>
+  <strong>Data processing:</strong> on-device, local to the phone.
+</p>
+
+<h2>2. What data we collect</h2>
+<p>
+  DopaHop stores the following data <strong>only on your phone</strong>.
+  No external server receives this content.
+</p>
+<ul>
+  <li>House tasks, rooms, completions</li>
+  <li>Brain Dump notes (text)</li>
+  <li>Shopping list</li>
+  <li>Mood and energy check-ins</li>
+  <li>Personal routines and steps</li>
+  <li>Medication reminders (name, dosage, schedule)</li>
+  <li>Time-since trackers and focus timers</li>
+  <li>Breathing and Focus Sounds sessions</li>
+  <li>Badges and progress</li>
+  <li>Preferences (theme, language, notification times)</li>
+</ul>
+
+<h3>Third-party data collection</h3>
+<table>
+  <tr><th>Service</th><th>Data</th><th>Purpose</th></tr>
+  <tr><td>Google AdMob</td><td>Android Advertising ID</td><td>Show ads in the free version</td></tr>
+  <tr><td>Google AdMob</td><td>IP address (masked)</td><td>Approximate geolocation for ads</td></tr>
+</table>
+<p>
+  EU/UK/Switzerland users see a Google UMP consent dialog before any
+  personalized ads are shown. If you decline, you'll only see generic
+  (non-personalized) ads.
+</p>
+
+<h2>3. How we use the data</h2>
+<ul>
+  <li><strong>App functionality</strong>: local data only powers the features you use.</li>
+  <li><strong>Advertising</strong>: AdMob (Google) manages ads in the free tier.</li>
+  <li><strong>No behavior analysis</strong>: no Firebase Analytics, no Mixpanel, no profiling.</li>
+  <li><strong>No data sales</strong>.</li>
+</ul>
+
+<h2>4. Where data is stored</h2>
+<p>
+  All personal data is stored <strong>only on your device</strong>:
+  local SQLite database, AsyncStorage preferences, and Focus Sounds
+  cache files. Android encrypts device storage automatically (AES-256
+  from Android 6 onward).
+</p>
+
+<h2>5. Your rights (GDPR)</h2>
+<p>At any time you can:</p>
+<ul>
+  <li><strong>Export</strong> your data as JSON: <em>Settings → Data → Export</em></li>
+  <li><strong>Delete</strong> all data with one tap: <em>Settings → Danger zone → Delete all my data</em></li>
+  <li><strong>Manage</strong> ad preferences: <em>Settings → Manage ad preferences</em></li>
+  <li><strong>Uninstall</strong> the app: this automatically removes all local data</li>
+</ul>
+<p>
+  For GDPR-specific requests (access, portability, objection) write to
+  <a href="mailto:annunziatoco@gmail.com">annunziatoco@gmail.com</a>.
+  We'll respond within 30 days.
+</p>
+
+<h2>6. Medical disclaimer</h2>
+<div class="disclaimer">
+  <strong>⚠️ Important</strong><br><br>
+  DopaHop is a wellness app, <strong>not a medical device</strong>. The
+  "Meds", "Mood", "Breathing" and "Focus Sounds" modules are support
+  tools and <strong>do not replace</strong> the advice of a qualified
+  doctor, psychologist or pharmacist.
+  <br><br>
+  In case of medical emergency call <strong>112</strong> (EU) or your
+  country's local emergency number.
+</div>
+
+<h2>7. Minors</h2>
+<p>
+  DopaHop is not intended for children under 13 (COPPA US) or under 16
+  without parental consent (GDPR-K EU). We do not knowingly collect
+  data from minors. If you're a parent and believe your child has used
+  the app without authorization, contact us to have the data deleted.
+</p>
+
+<h2>8. Policy updates</h2>
+<p>
+  Significant changes to this policy will be announced when you open
+  the app. The "Last updated" date at the top of this page is updated
+  on every revision.
+</p>
+
+</body>
+</html>
