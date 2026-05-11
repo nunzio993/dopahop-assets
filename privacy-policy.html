@@ -38,7 +38,7 @@
 
 <div class="lang-switch"><a href="#en">English</a></div>
 <h1>Privacy Policy — DopaHop</h1>
-<div class="meta">Versione 1.1 — Aggiornato il 6 maggio 2026</div>
+<div class="meta">Versione 1.1 — Aggiornato il 10 maggio 2026</div>
 
 <h2>1. Chi siamo</h2>
 <p>
@@ -64,26 +64,18 @@
   <li>Routine personali e step</li>
   <li>Promemoria farmaci (nome, dosaggio, orari)</li>
   <li>Tracker time-since e timer focus</li>
-  <li>Sessioni di respirazione e di Focus Sounds</li>
+  <li>Sessioni di meditazione (4 tecniche: pausa panico, grounding, calma, sonno) e di Focus Sounds</li>
   <li>Badge e progressi</li>
   <li>Preferenze (tema, lingua, orari notifiche)</li>
 </ul>
-<p>
-  <strong>Modulo Calendar (opt-in):</strong> se attivato, l'app legge
-  on-demand gli eventi del calendario di sistema per mostrarli nella
-  Timeline e per avvisarti se un farmaco si sovrappone a una riunione
-  ricorrente. Gli eventi <strong>non vengono mai salvati</strong> nel
-  database DopaHop né inviati a server esterni. Se attivi anche la
-  scrittura opzionale delle routine completate, l'app crea eventi
-  <code>✅ DopaHop · …</code> nel calendario che hai scelto — nessun
-  altro dato viene scritto.
-</p>
 
 <h3>Dati raccolti da terze parti</h3>
 <table>
-  <tr><th>Servizio</th><th>Dato</th><th>Scopo</th></tr>
-  <tr><td>Google AdMob</td><td>Advertising ID Android</td><td>Mostrare annunci nella versione gratuita</td></tr>
-  <tr><td>Google AdMob</td><td>IP address (mascherato)</td><td>Geolocalizzazione approssimativa per ad</td></tr>
+  <tr><th>Servizio</th><th>Dato</th><th>Scopo</th><th>Default</th></tr>
+  <tr><td>Google AdMob</td><td>Advertising ID Android</td><td>Mostrare annunci nella versione gratuita</td><td>Attivo (gratis)</td></tr>
+  <tr><td>Google AdMob</td><td>IP address (mascherato)</td><td>Geolocalizzazione approssimativa per ad</td><td>Attivo (gratis)</td></tr>
+  <tr><td>Firebase Analytics</td><td>Pseudonym ID, modello device, OS, città approssimativa, eventi onboarding</td><td>Capire dove gli utenti si bloccano nell'onboarding</td><td>Disattivato (opt-in)</td></tr>
+  <tr><td>Firebase Crashlytics</td><td>Stack trace dei crash, modello device, versione OS</td><td>Diagnosticare e risolvere crash</td><td>Disattivato (opt-in)</td></tr>
 </table>
 <p>
   Per gli utenti dell'Unione Europea/UK/Svizzera, prima di mostrare
@@ -92,12 +84,37 @@
   annunci generici (non basati sui tuoi interessi).
 </p>
 
+<h3>Analytics e crash reporting (opt-in)</h3>
+<p>
+  Firebase Analytics e Crashlytics sono <strong>disattivati di default</strong>.
+  Vengono attivati solo se accetti esplicitamente lo step "Eventi anonimi"
+  durante l'onboarding, oppure se attivi il toggle in
+  <em>Impostazioni → 🔒 Sicurezza → "Eventi anonimi"</em>.
+</p>
+<p>
+  Cosa raccogliamo quando l'opt-in è attivo:
+</p>
+<ul>
+  <li><strong>Eventi onboarding</strong> (8 totali): step iniziato/visto, chip selezionato in step 2, moduli scelti in step 3, accettazione notifiche in step 4, accettazione analytics in step 5, completamento, abbandono. Servono solo per capire dove le persone si bloccano e migliorare il flusso.</li>
+  <li><strong>Crash reports</strong>: stack trace tecnico quando l'app va in errore. Non includono il contenuto dei tuoi dati personali.</li>
+  <li><strong>Pseudonym ID Firebase</strong>: identificativo anonimo legato all'installazione, non collegato a te come persona. Si resetta se reinstalli l'app.</li>
+</ul>
+<p>
+  Cosa NON raccogliamo, mai: contenuto dei brain dump, valori di mood,
+  nomi di farmaci, testi di task, durate sessioni meditazione, contatti,
+  posizione precisa, foto, microfono.
+</p>
+<p>
+  Puoi disattivare in qualsiasi momento dallo stesso toggle in Impostazioni.
+  La disattivazione è immediata: nessun nuovo evento viene inviato.
+</p>
+
 <h2>3. Come usiamo i dati</h2>
 <ul>
   <li><strong>Funzionamento dell'app</strong>: i dati locali servono solo a far funzionare le feature che usi.</li>
   <li><strong>Pubblicità</strong>: AdMob (Google) gestisce gli annunci nella versione gratuita.</li>
-  <li><strong>Nessuna analisi del comportamento</strong>: non usiamo Firebase Analytics, Mixpanel, o sistemi di profilazione.</li>
-  <li><strong>Nessuna vendita di dati a terzi</strong>.</li>
+  <li><strong>Analytics opt-in</strong>: se attivi "Eventi anonimi", inviamo a Firebase 8 eventi onboarding e (se l'app crasha) il crash report. Solo per capire dove migliorare. Default OFF, vedi sezione 2 per dettagli.</li>
+  <li><strong>Nessun profiling cross-app</strong>: non condividiamo dati con altre app o servizi diversi da AdMob/Firebase. Mai dati venduti.</li>
 </ul>
 
 <h2>4. Dove sono conservati</h2>
@@ -125,11 +142,10 @@
   <tr><td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Audio Focus Sounds in background</td></tr>
   <tr><td>RECORD_AUDIO</td><td>Voice note nel Brain Dump (solo se attivato)</td></tr>
   <tr><td>ACCESS_NETWORK_STATE</td><td>Annunci AdMob</td></tr>
-  <tr><td>READ_CALENDAR + WRITE_CALENDAR</td><td>Modulo Calendar opt-in (eventi nella Timeline, scrittura routine completate). Richiesti insieme da Android.</td></tr>
 </table>
 <p>
   <strong>Non chiediamo mai:</strong> localizzazione, contatti, foto,
-  galleria, microfono in background.
+  galleria, microfono in background, calendario.
 </p>
 
 <h2>6. I tuoi diritti (GDPR)</h2>
@@ -150,9 +166,11 @@
 <div class="disclaimer">
   <strong>⚠️ Importante</strong><br><br>
   DopaHop è una app di benessere, <strong>non un dispositivo medico</strong>.
-  I moduli "Farmaci", "Mood", "Respirazione" e "Focus Sounds" sono
+  I moduli "Farmaci", "Mood", "Meditazione" e "Focus Sounds" sono
   strumenti di supporto e <strong>non sostituiscono</strong> il consiglio
-  di un medico, psicologo o farmacista qualificato.
+  di un medico, psicologo o farmacista qualificato. Le tecniche di
+  respirazione e grounding incluse non sostituiscono la terapia psicologica
+  per disturbi d'ansia, panico o sonno.
   <br><br>
   In caso di emergenza sanitaria chiama il <strong>112</strong> (UE)
   o il numero di emergenza locale del tuo paese.
@@ -178,7 +196,7 @@
 
 <a id="en"></a>
 <h1>Privacy Policy — DopaHop (English)</h1>
-<div class="meta">Version 1.1 — Updated May 6, 2026</div>
+<div class="meta">Version 1.1 — Updated May 10, 2026</div>
 
 <h2>1. Who we are</h2>
 <p>
@@ -203,26 +221,18 @@
   <li>Personal routines and steps</li>
   <li>Medication reminders (name, dosage, schedule)</li>
   <li>Time-since trackers and focus timers</li>
-  <li>Breathing and Focus Sounds sessions</li>
+  <li>Meditation sessions (4 techniques: panic pause, grounding, calm, sleep) and Focus Sounds sessions</li>
   <li>Badges and progress</li>
   <li>Preferences (theme, language, notification times)</li>
 </ul>
-<p>
-  <strong>Calendar module (opt-in):</strong> when enabled, the app
-  reads system calendar events on demand to show them in the Timeline
-  and to warn you about meds doses that collide with recurring
-  meetings. Calendar events are <strong>never stored</strong> in the
-  DopaHop database or sent to any server. If you also opt in to the
-  optional write-back of completed routines, the app creates
-  <code>✅ DopaHop · …</code> events in the calendar you picked —
-  nothing else is written.
-</p>
 
 <h3>Third-party data collection</h3>
 <table>
-  <tr><th>Service</th><th>Data</th><th>Purpose</th></tr>
-  <tr><td>Google AdMob</td><td>Android Advertising ID</td><td>Show ads in the free version</td></tr>
-  <tr><td>Google AdMob</td><td>IP address (masked)</td><td>Approximate geolocation for ads</td></tr>
+  <tr><th>Service</th><th>Data</th><th>Purpose</th><th>Default</th></tr>
+  <tr><td>Google AdMob</td><td>Android Advertising ID</td><td>Show ads in the free version</td><td>On (free tier)</td></tr>
+  <tr><td>Google AdMob</td><td>IP address (masked)</td><td>Approximate geolocation for ads</td><td>On (free tier)</td></tr>
+  <tr><td>Firebase Analytics</td><td>Pseudonym ID, device model, OS, approximate city, onboarding events</td><td>Understand where users get stuck during onboarding</td><td>Off (opt-in)</td></tr>
+  <tr><td>Firebase Crashlytics</td><td>Crash stack traces, device model, OS version</td><td>Diagnose and fix crashes</td><td>Off (opt-in)</td></tr>
 </table>
 <p>
   EU/UK/Switzerland users see a Google UMP consent dialog before any
@@ -230,12 +240,37 @@
   (non-personalized) ads.
 </p>
 
+<h3>Analytics and crash reporting (opt-in)</h3>
+<p>
+  Firebase Analytics and Crashlytics are <strong>off by default</strong>.
+  They turn on only if you explicitly accept the "Anonymous events" step
+  during onboarding, or toggle it on in
+  <em>Settings → 🔒 Security → "Anonymous events"</em>.
+</p>
+<p>
+  When opt-in is on, we collect:
+</p>
+<ul>
+  <li><strong>Onboarding events</strong> (8 in total): step started/shown, chip selected in step 2, modules picked in step 3, notifications accepted in step 4, analytics accepted in step 5, completion, abandonment. Used only to understand where people drop off and improve the flow.</li>
+  <li><strong>Crash reports</strong>: technical stack traces when the app errors. They don't include the content of your personal data.</li>
+  <li><strong>Firebase pseudonym ID</strong>: anonymous identifier tied to the install, not to you as a person. Resets if you reinstall.</li>
+</ul>
+<p>
+  What we never collect: brain dump content, mood values, medication
+  names, task text, meditation session durations, contacts, precise
+  location, photos, microphone.
+</p>
+<p>
+  You can turn it off any time from the same toggle in Settings.
+  Disabling is immediate: no new events are sent.
+</p>
+
 <h2>3. How we use the data</h2>
 <ul>
   <li><strong>App functionality</strong>: local data only powers the features you use.</li>
   <li><strong>Advertising</strong>: AdMob (Google) manages ads in the free tier.</li>
-  <li><strong>No behavior analysis</strong>: no Firebase Analytics, no Mixpanel, no profiling.</li>
-  <li><strong>No data sales</strong>.</li>
+  <li><strong>Opt-in analytics</strong>: if you turn on "Anonymous events", we send 8 onboarding events to Firebase, plus crash reports if the app crashes. Only to understand where to improve. Off by default — see section 2 for details.</li>
+  <li><strong>No cross-app profiling</strong>: we don't share your data with apps or services other than AdMob/Firebase. Never sold.</li>
 </ul>
 
 <h2>4. Where data is stored</h2>
@@ -264,9 +299,11 @@
 <div class="disclaimer">
   <strong>⚠️ Important</strong><br><br>
   DopaHop is a wellness app, <strong>not a medical device</strong>. The
-  "Meds", "Mood", "Breathing" and "Focus Sounds" modules are support
+  "Meds", "Mood", "Meditation" and "Focus Sounds" modules are support
   tools and <strong>do not replace</strong> the advice of a qualified
-  doctor, psychologist or pharmacist.
+  doctor, psychologist or pharmacist. The breathing and grounding
+  techniques included are not a substitute for psychological therapy
+  for anxiety, panic or sleep disorders.
   <br><br>
   In case of medical emergency call <strong>112</strong> (EU) or your
   country's local emergency number.
