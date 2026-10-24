@@ -38,7 +38,7 @@
 
 <div class="lang-switch"><a href="#en">English</a></div>
 <h1>Privacy Policy — DopaHop</h1>
-<div class="meta">Versione 1.2 — Aggiornato il 17 maggio 2026</div>
+<div class="meta">Versione 1.3 — Aggiornato il 24 ottobre 2026</div>
 
 <h2>1. Chi siamo</h2>
 <p>
@@ -48,7 +48,7 @@
 </p>
 <p>
   <strong>Contatto:</strong> <a href="mailto:annunziatoco@gmail.com">annunziatoco@gmail.com</a><br>
-  <strong>Tipo di trattamento dati:</strong> on-device, locale al telefono.
+  <strong>Tipo di trattamento dati:</strong> i tuoi contenuti restano sul telefono; alcuni dati tecnici vengono inviati ai fornitori elencati sotto.
 </p>
 
 <h2>2. Quali dati raccogliamo</h2>
@@ -64,18 +64,22 @@
   <li>Routine personali e step</li>
   <li>Promemoria farmaci (nome, dosaggio, orari)</li>
   <li>Tracker time-since e timer focus</li>
-  <li>Sessioni di meditazione (4 tecniche: pausa panico, grounding, calma, sonno) e di Focus Sounds</li>
+  <li>Sessioni di meditazione (comprese le meditazioni con voce) e di Focus Sounds</li>
+  <li>Stato di Hop (livello, carote, oggetti, mondo)</li>
   <li>Badge e progressi</li>
   <li>Preferenze (tema, lingua, orari notifiche)</li>
 </ul>
 
 <h3>Dati raccolti da terze parti</h3>
 <table>
-  <tr><th>Servizio</th><th>Dato</th><th>Scopo</th><th>Default</th></tr>
-  <tr><td>Google AdMob</td><td>Advertising ID Android</td><td>Mostrare annunci nella versione gratuita</td><td>Attivo (gratis)</td></tr>
-  <tr><td>Google AdMob</td><td>IP address (mascherato)</td><td>Geolocalizzazione approssimativa per ad</td><td>Attivo (gratis)</td></tr>
-  <tr><td>Firebase Analytics</td><td>Pseudonym ID, modello device, OS, città approssimativa, eventi onboarding</td><td>Capire dove gli utenti si bloccano nell'onboarding</td><td>Disattivato (opt-in)</td></tr>
-  <tr><td>Firebase Crashlytics</td><td>Stack trace dei crash, modello device, versione OS</td><td>Diagnosticare e risolvere crash</td><td>Disattivato (opt-in)</td></tr>
+  <tr><th>Servizio</th><th>Dato</th><th>Scopo</th><th>Quando</th></tr>
+  <tr><td>Google AdMob</td><td>ID pubblicità Android, indirizzo IP (posizione approssimativa), interazioni con gli annunci, dati tecnici del dispositivo</td><td>Mostrare annunci nella versione gratuita, misurarli, prevenire frodi</td><td>Versione gratuita</td></tr>
+  <tr><td>Firebase Analytics (Google)</td><td>ID pseudonimo dell'installazione, modello e sistema del dispositivo, città approssimativa, eventi d'uso (schermate visitate, azioni come "task completato", aperture del paywall)</td><td>Capire come si usa l'app e dove migliorarla</td><td>Solo con il tuo consenso</td></tr>
+  <tr><td>Firebase Crashlytics (Google)</td><td>Rapporti di crash, modello del dispositivo, versione del sistema</td><td>Trovare e correggere gli errori</td><td>Solo con il tuo consenso</td></tr>
+  <tr><td>Sentry (Functional Software Inc., server UE)</td><td>Errori e crash dell'app, dati tecnici del dispositivo e dell'app, durata delle sessioni</td><td>Trovare e correggere gli errori, stabilità dell'app</td><td>Sempre</td></tr>
+  <tr><td>RevenueCat</td><td>ID utente anonimo generato dall'app, stato e cronologia degli acquisti Pro</td><td>Gestire l'abbonamento Pro e il ripristino degli acquisti</td><td>Quando l'app controlla o effettua un acquisto</td></tr>
+  <tr><td>Google Play / App Store</td><td>Dati di pagamento</td><td>Acquisti Pro (gestiti interamente dallo store: noi non vediamo i dati della carta)</td><td>Solo se acquisti</td></tr>
+  <tr><td>GitHub (download audio)</td><td>Indirizzo IP</td><td>Scaricare suoni e meditazioni con voce</td><td>Quando scarichi un audio</td></tr>
 </table>
 <p>
   Per gli utenti dell'Unione Europea/UK/Svizzera, prima di mostrare
@@ -84,37 +88,35 @@
   annunci generici (non basati sui tuoi interessi).
 </p>
 
-<h3>Analytics e crash reporting (opt-in)</h3>
+<h3>Statistiche d'uso e crash (con consenso)</h3>
 <p>
-  Firebase Analytics e Crashlytics sono <strong>disattivati di default</strong>.
-  Vengono attivati solo se accetti esplicitamente lo step "Eventi anonimi"
-  durante l'onboarding, oppure se attivi il toggle in
-  <em>Impostazioni → 🔒 Sicurezza → "Eventi anonimi"</em>.
+  Firebase Analytics e Crashlytics sono <strong>spenti finché non dai il consenso</strong>
+  durante l'onboarding ("Dati anonimi") o in
+  <em>Impostazioni → 🔒 Sicurezza → "Eventi anonimi"</em>. Puoi ritirarlo
+  in qualsiasi momento dallo stesso interruttore: da quel momento non
+  viene inviato nessun nuovo evento.
 </p>
 <p>
-  Cosa raccogliamo quando l'opt-in è attivo:
-</p>
-<ul>
-  <li><strong>Eventi onboarding</strong> (8 totali): step iniziato/visto, chip selezionato in step 2, moduli scelti in step 3, accettazione notifiche in step 4, accettazione analytics in step 5, completamento, abbandono. Servono solo per capire dove le persone si bloccano e migliorare il flusso.</li>
-  <li><strong>Crash reports</strong>: stack trace tecnico quando l'app va in errore. Non includono il contenuto dei tuoi dati personali.</li>
-  <li><strong>Pseudonym ID Firebase</strong>: identificativo anonimo legato all'installazione, non collegato a te come persona. Si resetta se reinstalli l'app.</li>
-</ul>
-<p>
-  Cosa NON raccogliamo, mai: contenuto dei brain dump, valori di mood,
-  nomi di farmaci, testi di task, durate sessioni meditazione, contatti,
-  posizione precisa, foto, microfono.
+  Gli eventi dicono solo <em>che</em> una cosa è successa (es. "umore
+  registrato", "schermata Meditazione aperta"), mai il contenuto.
+  <strong>Non raccogliamo mai</strong>: testo dei brain dump, valori di
+  umore, nomi o dosi dei farmaci, testi dei task, contatti, posizione
+  precisa, foto, audio dal microfono.
 </p>
 <p>
-  Puoi disattivare in qualsiasi momento dallo stesso toggle in Impostazioni.
-  La disattivazione è immediata: nessun nuovo evento viene inviato.
+  Sentry raccoglie solo informazioni tecniche sugli errori (dove si è
+  rotto il codice, versione dell'app, modello del telefono), senza i
+  tuoi contenuti. È necessario per mantenere l'app stabile.
 </p>
 
 <h2>3. Come usiamo i dati</h2>
 <ul>
-  <li><strong>Funzionamento dell'app</strong>: i dati locali servono solo a far funzionare le feature che usi.</li>
-  <li><strong>Pubblicità</strong>: AdMob (Google) gestisce gli annunci nella versione gratuita.</li>
-  <li><strong>Analytics opt-in</strong>: se attivi "Eventi anonimi", inviamo a Firebase 8 eventi onboarding e (se l'app crasha) il crash report. Solo per capire dove migliorare. Default OFF, vedi sezione 2 per dettagli.</li>
-  <li><strong>Nessun profiling cross-app</strong>: non condividiamo dati con altre app o servizi diversi da AdMob/Firebase. Mai dati venduti.</li>
+  <li><strong>Funzionamento dell'app</strong>: i dati locali servono solo a far funzionare le funzioni che usi.</li>
+  <li><strong>Pubblicità</strong>: AdMob (Google) gestisce gli annunci nella versione gratuita. Gli utenti Pro non vedono annunci.</li>
+  <li><strong>Statistiche</strong>: con il tuo consenso, per capire cosa funziona e migliorare l'app.</li>
+  <li><strong>Stabilità</strong>: rapporti di errore (Sentry; Crashlytics con consenso).</li>
+  <li><strong>Acquisti</strong>: RevenueCat e lo store gestiscono l'abbonamento Pro.</li>
+  <li><strong>Mai venduti</strong>: non vendiamo dati e non li condividiamo per scopi diversi da quelli elencati.</li>
 </ul>
 
 <h2>4. Dove sono conservati</h2>
@@ -135,17 +137,16 @@
 <h2>5. Permessi richiesti</h2>
 <table>
   <tr><th>Permesso</th><th>Motivo</th></tr>
-  <tr><td>POST_NOTIFICATIONS</td><td>Promemoria routine, farmaci</td></tr>
-  <tr><td>USE_EXACT_ALARM</td><td>Notifiche all'orario esatto</td></tr>
-  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>Ri-schedulare promemoria dopo riavvio</td></tr>
-  <tr><td>USE_BIOMETRIC</td><td>Sblocco biometrico opt-in (solo se attivato)</td></tr>
-  <tr><td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Audio Focus Sounds in background</td></tr>
-  <tr><td>RECORD_AUDIO</td><td>Voice note nel Brain Dump (solo se attivato)</td></tr>
-  <tr><td>ACCESS_NETWORK_STATE</td><td>Annunci AdMob</td></tr>
+  <tr><td>POST_NOTIFICATIONS</td><td>Promemoria routine, farmaci, Hop</td></tr>
+  <tr><td>SCHEDULE_EXACT_ALARM</td><td>Notifiche all'orario esatto</td></tr>
+  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>Ri-programmare i promemoria dopo un riavvio</td></tr>
+  <tr><td>USE_BIOMETRIC</td><td>Sblocco con impronta/volto (solo se lo attivi)</td></tr>
+  <tr><td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Suoni in sottofondo</td></tr>
+  <tr><td>Calendario</td><td>Aggiungere le routine al tuo calendario (solo se lo attivi; restano sul telefono)</td></tr>
+  <tr><td>AD_ID, ACCESS_NETWORK_STATE, INTERNET</td><td>Annunci AdMob, download degli audio</td></tr>
 </table>
 <p>
-  <strong>Non chiediamo mai:</strong> localizzazione, contatti, foto,
-  galleria, microfono in background, calendario.
+  <strong>Non chiediamo mai:</strong> posizione, contatti, foto, galleria, microfono.
 </p>
 
 <h2>6. I tuoi diritti (GDPR)</h2>
@@ -239,7 +240,7 @@
 
 <a id="en"></a>
 <h1>Privacy Policy — DopaHop (English)</h1>
-<div class="meta">Version 1.2 — Updated May 17, 2026</div>
+<div class="meta">Version 1.3 — Updated October 24, 2026</div>
 
 <h2>1. Who we are</h2>
 <p>
@@ -248,7 +249,7 @@
 </p>
 <p>
   <strong>Contact:</strong> <a href="mailto:annunziatoco@gmail.com">annunziatoco@gmail.com</a><br>
-  <strong>Data processing:</strong> on-device, local to the phone.
+  <strong>Data processing:</strong> your content stays on the phone; some technical data is sent to the providers listed below.
 </p>
 
 <h2>2. What data we collect</h2>
@@ -264,18 +265,22 @@
   <li>Personal routines and steps</li>
   <li>Medication reminders (name, dosage, schedule)</li>
   <li>Time-since trackers and focus timers</li>
-  <li>Meditation sessions (4 techniques: panic pause, grounding, calm, sleep) and Focus Sounds sessions</li>
+  <li>Meditation sessions (including voice-guided meditations) and Focus Sounds sessions</li>
+  <li>Hop's state (level, carrots, items, world)</li>
   <li>Badges and progress</li>
   <li>Preferences (theme, language, notification times)</li>
 </ul>
 
 <h3>Third-party data collection</h3>
 <table>
-  <tr><th>Service</th><th>Data</th><th>Purpose</th><th>Default</th></tr>
-  <tr><td>Google AdMob</td><td>Android Advertising ID</td><td>Show ads in the free version</td><td>On (free tier)</td></tr>
-  <tr><td>Google AdMob</td><td>IP address (masked)</td><td>Approximate geolocation for ads</td><td>On (free tier)</td></tr>
-  <tr><td>Firebase Analytics</td><td>Pseudonym ID, device model, OS, approximate city, onboarding events</td><td>Understand where users get stuck during onboarding</td><td>Off (opt-in)</td></tr>
-  <tr><td>Firebase Crashlytics</td><td>Crash stack traces, device model, OS version</td><td>Diagnose and fix crashes</td><td>Off (opt-in)</td></tr>
+  <tr><th>Service</th><th>Data</th><th>Purpose</th><th>When</th></tr>
+  <tr><td>Google AdMob</td><td>Android advertising ID, IP address (approximate location), ad interactions, technical device data</td><td>Show ads in the free version, measure them, prevent fraud</td><td>Free version</td></tr>
+  <tr><td>Firebase Analytics (Google)</td><td>Pseudonymous install ID, device model and OS, approximate city, usage events (screens visited, actions like "task completed", paywall opens)</td><td>Understand how the app is used and where to improve it</td><td>Only with your consent</td></tr>
+  <tr><td>Firebase Crashlytics (Google)</td><td>Crash reports, device model, OS version</td><td>Find and fix errors</td><td>Only with your consent</td></tr>
+  <tr><td>Sentry (Functional Software Inc., EU servers)</td><td>App errors and crashes, technical device and app data, session length</td><td>Find and fix errors, app stability</td><td>Always</td></tr>
+  <tr><td>RevenueCat</td><td>Anonymous user ID generated by the app, Pro purchase status and history</td><td>Manage the Pro subscription and restore purchases</td><td>When the app checks or makes a purchase</td></tr>
+  <tr><td>Google Play / App Store</td><td>Payment data</td><td>Pro purchases (fully handled by the store: we never see card details)</td><td>Only if you buy</td></tr>
+  <tr><td>GitHub (audio downloads)</td><td>IP address</td><td>Download sounds and voice meditations</td><td>When you download audio</td></tr>
 </table>
 <p>
   EU/UK/Switzerland users see a Google UMP consent dialog before any
@@ -283,37 +288,33 @@
   (non-personalized) ads.
 </p>
 
-<h3>Analytics and crash reporting (opt-in)</h3>
+<h3>Usage statistics and crashes (with consent)</h3>
 <p>
-  Firebase Analytics and Crashlytics are <strong>off by default</strong>.
-  They turn on only if you explicitly accept the "Anonymous events" step
-  during onboarding, or toggle it on in
-  <em>Settings → 🔒 Security → "Anonymous events"</em>.
+  Firebase Analytics and Crashlytics stay <strong>off until you consent</strong>
+  during onboarding ("Anonymous data") or in
+  <em>Settings → 🔒 Security → "Anonymous events"</em>. You can withdraw
+  it any time from the same toggle: from then on no new event is sent.
 </p>
 <p>
-  When opt-in is on, we collect:
-</p>
-<ul>
-  <li><strong>Onboarding events</strong> (8 in total): step started/shown, chip selected in step 2, modules picked in step 3, notifications accepted in step 4, analytics accepted in step 5, completion, abandonment. Used only to understand where people drop off and improve the flow.</li>
-  <li><strong>Crash reports</strong>: technical stack traces when the app errors. They don't include the content of your personal data.</li>
-  <li><strong>Firebase pseudonym ID</strong>: anonymous identifier tied to the install, not to you as a person. Resets if you reinstall.</li>
-</ul>
-<p>
-  What we never collect: brain dump content, mood values, medication
-  names, task text, meditation session durations, contacts, precise
-  location, photos, microphone.
+  Events only say <em>that</em> something happened (e.g. "mood logged",
+  "Meditation screen opened"), never the content. <strong>We never
+  collect</strong>: brain dump text, mood values, medication names or
+  doses, task text, contacts, precise location, photos, microphone audio.
 </p>
 <p>
-  You can turn it off any time from the same toggle in Settings.
-  Disabling is immediate: no new events are sent.
+  Sentry only collects technical information about errors (where the
+  code broke, app version, phone model), without your content. It is
+  needed to keep the app stable.
 </p>
 
 <h2>3. How we use the data</h2>
 <ul>
   <li><strong>App functionality</strong>: local data only powers the features you use.</li>
-  <li><strong>Advertising</strong>: AdMob (Google) manages ads in the free tier.</li>
-  <li><strong>Opt-in analytics</strong>: if you turn on "Anonymous events", we send 8 onboarding events to Firebase, plus crash reports if the app crashes. Only to understand where to improve. Off by default — see section 2 for details.</li>
-  <li><strong>No cross-app profiling</strong>: we don't share your data with apps or services other than AdMob/Firebase. Never sold.</li>
+  <li><strong>Advertising</strong>: AdMob (Google) manages ads in the free version. Pro users see no ads.</li>
+  <li><strong>Statistics</strong>: with your consent, to understand what works and improve the app.</li>
+  <li><strong>Stability</strong>: error reports (Sentry; Crashlytics with consent).</li>
+  <li><strong>Purchases</strong>: RevenueCat and the store manage the Pro subscription.</li>
+  <li><strong>Never sold</strong>: we don't sell data or share it for purposes other than those listed.</li>
 </ul>
 
 <h2>4. Where data is stored</h2>
@@ -322,6 +323,21 @@
   local SQLite database, AsyncStorage preferences, and Focus Sounds
   cache files. Android encrypts device storage automatically (AES-256
   from Android 6 onward).
+</p>
+
+<h3>Permissions</h3>
+<table>
+  <tr><th>Permission</th><th>Reason</th></tr>
+  <tr><td>POST_NOTIFICATIONS</td><td>Routine, medication and Hop reminders</td></tr>
+  <tr><td>SCHEDULE_EXACT_ALARM</td><td>Notifications at the exact time</td></tr>
+  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>Reschedule reminders after a reboot</td></tr>
+  <tr><td>USE_BIOMETRIC</td><td>Fingerprint/face unlock (only if you turn it on)</td></tr>
+  <tr><td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Background sounds</td></tr>
+  <tr><td>Calendar</td><td>Add routines to your calendar (only if you turn it on; stays on the phone)</td></tr>
+  <tr><td>AD_ID, ACCESS_NETWORK_STATE, INTERNET</td><td>AdMob ads, audio downloads</td></tr>
+</table>
+<p>
+  <strong>We never ask for:</strong> location, contacts, photos, gallery, microphone.
 </p>
 
 <h2>5. Your rights (GDPR)</h2>
